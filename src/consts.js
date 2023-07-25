@@ -1,8 +1,8 @@
 export const SITE_TITLE = `Air Blog`;
 export const SITE_DESCRIPTION = 'Site Description';
-export const SITE_EMAIL = 'no.sql@qq.com'
-export const SITE_NAME = 'astro.yufengbiji.com';
-export const SITE_URL = "https://astro.yufengbiji.com";
+export const SITE_EMAIL = '1910156852@qq.com'
+export const SITE_NAME = 'pigstar.icu';
+export const SITE_URL = "https://pigstar.icu";
 export const SITE_LANG = "zh-CN";
 
 // Author, used only when author is not specified on the page, 
