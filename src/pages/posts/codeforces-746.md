@@ -10,6 +10,7 @@ layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
+pubDate: 2022-03-09 16:04:13.918000
 tags:
 - ACM
 - ICPC
