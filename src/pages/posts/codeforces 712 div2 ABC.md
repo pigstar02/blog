@@ -22,7 +22,7 @@ title: codeforces 712 div2 ABC
 
 # codeforces 712 div2 ABC
 
-<div align='center' ><font size='5'>A. Déjà Vu</font></div>
+## A. Déjà Vu
 
 
 
@@ -156,7 +156,7 @@ int main(){
 ```
 
 ---
-<div align='center' ><font size='5'>B.Flip the Bits</font></div>
+## B.Flip the Bits
 
 There is a binary string 𝑎 of length 𝑛. In one operation, you can select any prefix of 𝑎 with an equal number of 0 and 1 symbols. Then all symbols in the prefix are inverted: each 0 becomes 1 and each 1 becomes 0
 
@@ -328,7 +328,7 @@ int main(){
 ```
 
 ---
- <div align='center' ><font size='5'>C. Balance the Bits</font></div>
+## C. Balance the Bits
 
 A sequence of brackets is called balanced if one can turn it into a valid math expression by adding characters '+' and '1'. For example, sequences '(())()', '()', and '(()(()))' are balanced, while ')(', '(()', and '(()))(' are not.
 
