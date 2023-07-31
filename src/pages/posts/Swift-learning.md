@@ -2,8 +2,8 @@
 author: pigstar
 cover:
   alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+  square: https://cdn.jsdelivr.net/gh/pigstar02/blog_img//202307312302472.jpeg
+  url: https://cdn.jsdelivr.net/gh/pigstar02/blog_img//202307312302472.jpeg
 description: ''
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
@@ -14,9 +14,8 @@ meta:
   name: keywords
 pubDate: 2023-02-23 21:13:35
 tags:
-- ACM
-- ICPC
-- 题解
+- ios
+- swift 
 theme: light
 title: Swift-learning
 ---
