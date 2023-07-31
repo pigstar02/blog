@@ -28,9 +28,16 @@ def process_markdown_file(file_path):
         metadata['tags'] = ['ACM', 'ICPC', '题解']
         metadata['theme'] = 'light'
         metadata['feature'] = True
-        metadata['meta'] = {}
-        metadata['meta']['author'] = "pigstar"
-        metadata['meta']['keywords'] = "key3, key4"
+        metadata['meta'] = [] 
+        metadata['meta'].append({
+            "name": 'author',
+            "content": "pigstar"
+        })
+        metadata['meta'].append({
+            "name": 'keywords',
+            "content": "key3, key4"
+        })
+        
         metadata['keywords'] = {}
         metadata['keywords'] = "key1, key2, key3"  
         

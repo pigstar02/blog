@@ -8,8 +8,10 @@ description: ''
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
-  author: pigstar
-  keywords: key3, key4
+- content: pigstar
+  name: author
+- content: key3, key4
+  name: keywords
 pubDate: 2022-04-27 14:59:18
 tags:
 - ACM
