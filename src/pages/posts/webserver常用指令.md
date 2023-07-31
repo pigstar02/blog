@@ -8,10 +8,12 @@ description: ''
 keywords: 计算机图形学, GAMES101
 layout: ../../layouts/MarkdownPost.astro
 meta:
-  author: pigstar
-  keywords: 计算机图形学, GAMES101
+- content: pigstar
+  name: author
+- content: linux网络编程, webserver
+  name: keywords
 pubDate: 2023-02-27 16:32:17
-tags: []
+tags: [linux网络编程, webserver]
 theme: light
 title: webserver常用指令
 ---
