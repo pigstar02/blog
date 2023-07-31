@@ -5,15 +5,12 @@ cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
   url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-date: &id001 2022-03-05 17:54:44.541000
-feature: true
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-pubDate: *id001
-tags: []
+pubDate: 2022-03-05 17:54:44.541000
 theme: light
 title: namomo每日一题week2-day1 - daimayuanoj466. 摘桃子
 updated: 2022-03-05 17:54:44.541000

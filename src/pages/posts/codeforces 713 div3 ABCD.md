@@ -5,15 +5,12 @@ cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
   url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-date: &id001 2021-04-13 16:26:14
-feature: true
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-pubDate: *id001
-tags: []
+pubDate: 2021-04-13 16:26:14
 theme: light
 title: codeforces 713 div3 ABCD
 ---

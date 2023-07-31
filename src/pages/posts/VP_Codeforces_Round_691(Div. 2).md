@@ -5,15 +5,12 @@ cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
   url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-date: &id001 2022-07-17 10:52:00.680000
-feature: true
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-pubDate: *id001
-tags: []
+pubDate: 2022-07-17 10:52:00.680000
 theme: light
 title: VP CodeforcesRound 691(Div.2)
 updated: 2022-07-17 10:52:00.680000

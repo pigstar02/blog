@@ -4,15 +4,12 @@ cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
   url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-date: 2022-04-13 15:32:12
-feature: true
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-pubDate: *id001
-tags: []
+pubDate: 2022-04-13 15:32:12
 theme: light
 title: template
 ---

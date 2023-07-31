@@ -5,15 +5,12 @@ cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
   url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-date: &id001 2022-01-18 15:23:56.213000
-feature: true
 keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-pubDate: *id001
-tags: []
+pubDate: 2022-01-18 15:23:56.213000
 theme: light
 title: 第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛  K金牌厨师
 ---
