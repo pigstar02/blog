@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-10 17:07:57.709000
 theme: light
 title: namomo每日一题week2-day6 - daimayuanoj380.Damaged Bicycle
-updated: 2022-03-10 17:08:56.136000
-url: /archives/namomo每日一题week2-day6-daimayuanoj380damagedbicycle
 ---
 
 # [Damaged Bicycle](http://oj.daimayuan.top/course/10/problem/380)

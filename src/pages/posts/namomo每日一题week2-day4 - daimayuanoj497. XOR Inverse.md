@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-08 14:50:03.806000
 theme: light
 title: namomo每日一题week2-day4 - daimayuanoj497. XOR Inverse
-updated: 2022-03-08 14:50:41.190000
-url: /archives/namomo-mei-ri-yi-ti-week2-day4-daimayuanoj497xorinverse
 ---
 
 # [XOR Inverse](http://oj.daimayuan.top/problem/497)

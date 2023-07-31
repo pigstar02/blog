@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-03 13:53:15.648000
 theme: light
 title: namomo每日一题week1-day6 - daimayuanoj464. 数数
-updated: 2022-03-03 23:41:51.676000
-url: /archives/namomo-mei-ri-yi-ti-week1-day6-daimayuanoj464shu-shu
 ---
 
 # [数数](http://oj.daimayuan.top/problem/464)

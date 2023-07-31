@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-01 09:48:59.050000
 theme: light
 title: namomo每日一题week1-day4 - daimayuanoj456. 选数
-updated: 2022-03-01 09:49:14.407000
-url: /archives/namomo每日一题week1-day4-daimayuanoj456选数
 ---
 
 [选数](http://oj.daimayuan.top/problem/456)

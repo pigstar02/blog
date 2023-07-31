@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-06 23:41:18.626000
 theme: light
 title: namomo每日一题week2-day2 - daimayuanoj467. 路径计数2
-updated: 2022-03-06 23:55:47.261000
-url: /archives/namomo每日一题week2-day2-daimayuanoj467路径计数2
 ---
 
 # [路径计数2](http://oj.daimayuan.top/problem/467)

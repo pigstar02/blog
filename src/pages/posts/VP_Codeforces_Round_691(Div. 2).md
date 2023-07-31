@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces-VP
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,7 +12,6 @@ meta:
 pubDate: 2022-07-17 10:52:00.680000
 theme: light
 title: VP CodeforcesRound 691(Div.2)
-updated: 2022-07-17 10:52:00.680000
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-02-27 22:39:37.791000
 theme: light
 title: namomo每日一题week1-day2 - daimayuanoj437. no crossing
-updated: 2022-02-28 23:10:44.956000
-url: /archives/namomo每日一题week1day2-daimayuanoj437nocrossing
 ---
 
 # no crossing[传送门](http://oj.daimayuan.top/problem/437)

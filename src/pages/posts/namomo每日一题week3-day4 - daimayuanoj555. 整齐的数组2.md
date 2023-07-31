@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-15 10:52:00.680000
 theme: light
 title: namomo每日一题week3-day4 - daimayuanoj555. 整齐的数组2
-updated: 2022-03-15 10:52:00.680000
-url: /archives/namomo-mei-ri-yi-ti-week3-day4-daimayuanoj555zheng-qi-de-shu-zu-2
 ---
 
 # [整齐的数组](http://oj.daimayuan.top/course/10/problem/555)

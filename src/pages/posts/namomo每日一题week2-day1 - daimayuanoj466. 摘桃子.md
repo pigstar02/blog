@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-05 17:54:44.541000
 theme: light
 title: namomo每日一题week2-day1 - daimayuanoj466. 摘桃子
-updated: 2022-03-05 17:54:44.541000
-url: /archives/namomo-mei-ri-yi-ti-week2-day1-daimayuanoj466zhai-tao-zi
 ---
 
 # [摘桃子](http://oj.daimayuan.top/course/10/problem/466)

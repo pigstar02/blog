@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces | 树
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-02-03 17:11:51.157000
 theme: light
 title: Codeforces Round 769 (Div. 2) E2. Distance Tree (hard version)
-updated: 2022-02-03 17:12:27.757000
-url: /archives/codeforcesround769div2e2distancetreehardversion
 ---
 
 

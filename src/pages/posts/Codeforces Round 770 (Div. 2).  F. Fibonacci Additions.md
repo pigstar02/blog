@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-02-22 17:05:34.381000
 theme: light
 title: Codeforces Round 770 (Div. 2).  F. Fibonacci Additions
-updated: 2022-02-22 17:05:34.381000
-url: /archives/codeforcesround770div2ffibonacciadditions
 ---
 
 ### 题意

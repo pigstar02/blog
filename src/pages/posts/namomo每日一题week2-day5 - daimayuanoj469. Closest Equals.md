@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-09 13:06:16.867000
 theme: light
 title: namomo每日一题week2-day5 - daimayuanoj469. Closest Equals
-updated: 2022-03-09 15:01:36.571000
-url: /archives/namomo-mei-ri-yi-ti-week2-day4-daimayuanoj469closestequals
 ---
 
 # [Closest Equals](http://oj.daimayuan.top/course/10/problem/469)

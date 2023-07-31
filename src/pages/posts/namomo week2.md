@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo camp
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-06 01:50:38.394000
 theme: light
 title: namomo week2
-updated: 2022-03-10 17:35:34.997000
-url: /archives/namomoweek2
 ---
 
 # [题单](https://vjudge.net/contest/483210#overview)

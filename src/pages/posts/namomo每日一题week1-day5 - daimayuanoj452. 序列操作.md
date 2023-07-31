@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-02 09:56:18.557000
 theme: light
 title: namomo每日一题week1-day5 - daimayuanoj452. 序列操作
-updated: 2022-03-03 23:36:11.600000
-url: /archives/namomo每日一题week1-day5-daimayuanoj452序列操作
 ---
 
 [序列操作](http://oj.daimayuan.top/problem/452)

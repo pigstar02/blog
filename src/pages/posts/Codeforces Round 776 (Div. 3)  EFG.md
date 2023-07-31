@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-09 16:04:13.918000
 theme: light
 title: Codeforces Round 776 (Div. 3)  EFG
-updated: 2022-03-09 16:04:13.918000
-url: /archives/codeforcesround776div3efg
 ---
 
 # E. Rescheduling the Exam

@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-04 13:01:59.970000
 theme: light
 title: namomo每日一题week1-day7 - daimayuanoj454. Minimum Or Spanning Tree
-updated: 2022-03-04 13:01:59.970000
-url: /archives/namomo-mei-ri-yi-ti-week1-day7-daimayuanoj454minimumorspanningtree
 ---
 
 [Minimum Or Spanning Tree](http://oj.daimayuan.top/course/10/problem/454)

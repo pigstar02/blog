@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-07 09:24:33.226000
 theme: light
 title: namomo每日一题week2-day3 - daimayuanoj468. 函数求和
-updated: 2022-03-07 09:24:33.226000
-url: /archives/namomo-mei-ri-yi-ti-week2-day3-daimayuanoj468han-shu-qiu-he
 ---
 
 # [函数求和](http://oj.daimayuan.top/problem/468)

@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2021-11-13 16:50:10.633000
 theme: light
 title: Codeforces Round 754 (Div. 2)
-updated: 2021-11-13 17:21:56.989000
-url: /archives/codeforcesround754div2
 ---
 
 > 赛时只做出了ABC，D想的很接近了，但是后面染色的部分没搞出来

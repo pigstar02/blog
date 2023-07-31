@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: codeforces
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-03-08 16:58:21.248000
 theme: light
 title: Codeforces Round 775   E.Tyler and Strings
-updated: 2022-03-08 16:58:21.248000
-url: /archives/codeforcesround775etylerandstrings
 ---
 
 # [Tyler and Strings ](https://codeforces.com/contest/1649/problem/E)

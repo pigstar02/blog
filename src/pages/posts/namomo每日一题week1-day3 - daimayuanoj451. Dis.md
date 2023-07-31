@@ -1,6 +1,5 @@
 ---
 author: pigstar
-categories: namomo每日一题
 cover:
   alt: cover
   square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
@@ -13,8 +12,6 @@ meta:
 pubDate: 2022-02-28 22:58:52.861000
 theme: light
 title: namomo每日一题week1-day3 - daimayuanoj451. Dis
-updated: 2022-02-28 23:10:14.474000
-url: /archives/namomo每日一题week1day3-daimayuanoj451dis
 ---
 
 [#451. Dis](http://oj.daimayuan.top/submissions)
