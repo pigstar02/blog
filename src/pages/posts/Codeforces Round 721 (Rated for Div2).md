@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-05-21 01:34:14
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: Codeforces Round
 ---

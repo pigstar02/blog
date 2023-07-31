@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2023-02-23 21:13:35
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: Swift-learning
 ---

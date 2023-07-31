@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-15 10:52:00.680000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo每日一题week3-day4 - daimayuanoj555. 整齐的数组2
 ---

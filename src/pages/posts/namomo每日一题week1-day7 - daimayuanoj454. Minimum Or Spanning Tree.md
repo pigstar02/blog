@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-04 13:01:59.970000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo每日一题week1-day7 - daimayuanoj454. Minimum Or Spanning Tree
 ---

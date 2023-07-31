@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-09 16:04:13.918000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: Codeforces Round 776 (Div. 3)  EFG
 ---

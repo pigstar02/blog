@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-02-28 17:11:39.350000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo week1
 ---

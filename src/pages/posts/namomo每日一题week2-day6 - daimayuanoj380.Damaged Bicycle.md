@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-10 17:07:57.709000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo每日一题week2-day6 - daimayuanoj380.Damaged Bicycle
 ---

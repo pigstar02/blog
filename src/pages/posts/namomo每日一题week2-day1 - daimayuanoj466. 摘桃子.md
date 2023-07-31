@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-05 17:54:44.541000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo每日一题week2-day1 - daimayuanoj466. 摘桃子
 ---

@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-01-18 15:23:56.213000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: 第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛  K金牌厨师
 ---

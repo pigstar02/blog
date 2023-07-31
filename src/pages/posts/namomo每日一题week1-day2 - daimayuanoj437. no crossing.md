@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-02-27 22:39:37.791000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: namomo每日一题week1-day2 - daimayuanoj437. no crossing
 ---

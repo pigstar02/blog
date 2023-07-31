@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-07-17 10:52:00.680000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: VP CodeforcesRound 691(Div.2)
 ---

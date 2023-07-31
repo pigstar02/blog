@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-11-30 09:11:13
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: 2021上海ICPC--H.Life is a Game--Kruskal重构树--铜牌拦路虎
 ---

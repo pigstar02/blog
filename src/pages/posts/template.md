@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-04-13 15:32:12
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: template
 ---

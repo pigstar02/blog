@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-11-13 16:50:10.633000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: Codeforces Round 754 (Div. 2)
 ---

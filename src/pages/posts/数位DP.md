@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-11-17 19:02:31
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: 数位DP
 ---

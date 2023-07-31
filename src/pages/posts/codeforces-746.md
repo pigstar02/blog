@@ -9,7 +9,10 @@ layout: ../../layouts/MarkdownPost.astro
 meta:
   author: pigstar
   keywords: key3, key4
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: codeforces 746
 ---

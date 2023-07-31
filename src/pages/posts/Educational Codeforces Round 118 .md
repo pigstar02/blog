@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-12-03 14:19:16.695000
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: Educational Codeforces Round 118
 ---

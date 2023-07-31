@@ -10,7 +10,10 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-04-13 16:26:14
-tags: []
+tags:
+- ACM
+- ICPC
+- 题解
 theme: light
 title: codeforces 713 div3 ABCD
 ---
