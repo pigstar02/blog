@@ -87,10 +87,21 @@ def process_markdown_file(file_path):
             f.write(yaml.dump(metadata, default_flow_style=False, allow_unicode=True))
             f.write('---\n')
             f.write(match.group(2))
-print(os.getcwd()+'/posts')
+def call(file_path):
+   # 读取文件内容
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+        content = content.replace('../../../layouts/MarkdownPost.astro','../../layouts/MarkdownPost.astro')
+
+        # 重新写入文件
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(content) 
+print(os.getcwd()+'/posts/')
 # 遍历当前路径下的所有Markdown文件
-for filename in glob.glob("posts/*.md"):
+for filename in glob.glob("posts/games101/*.md"):
     # 处理每个文件
     file_path = os.path.join(os.getcwd(), filename)
     # print(filename)
-    process_markdown_file(file_path)
+    # process_markdown_file(file_path)
+    call(file_path)

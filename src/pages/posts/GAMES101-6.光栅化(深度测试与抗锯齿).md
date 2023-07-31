@@ -6,7 +6,7 @@ cover:
   url: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
 description: ''
 keywords: 计算机图形学, GAMES101
-layout: ../../../layouts/MarkdownPost.astro
+layout: ../../layouts/MarkdownPost.astro
 meta:
 - content: pigstar
   name: author
