@@ -24,6 +24,7 @@ def process_markdown_file(file_path):
         metadata['cover']['url'] = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU'
         metadata['cover']['square'] = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU' 
         metadata['cover']['alt'] = 'cover'
+        metadata['description'] = ""
         metadata['tags'] = ['ACM', 'ICPC', '题解']
         metadata['theme'] = 'light'
         metadata['feature'] = True
@@ -56,7 +57,8 @@ def process_markdown_file(file_path):
             "pubDate",
             "theme",
             "title",
-            "tags"
+            "tags",
+            'description'
         ]
         remove_keys = []
         # 遍历所有的键值对
