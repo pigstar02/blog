@@ -68,6 +68,11 @@ def process_markdown_file(file_path):
                 remove_keys.append(key)
         for key in remove_keys:
             del metadata[key]
+        
+        for key in allowed_keys:
+            if key not in metadata:
+                print(file_path)
+                break
 
         # 重新写入文件
         with open(file_path, 'w', encoding='utf-8') as f:
@@ -80,5 +85,5 @@ print(os.getcwd()+'/posts')
 for filename in glob.glob("posts/*.md"):
     # 处理每个文件
     file_path = os.path.join(os.getcwd(), filename)
-    print(filename)
+    # print(filename)
     process_markdown_file(file_path)
