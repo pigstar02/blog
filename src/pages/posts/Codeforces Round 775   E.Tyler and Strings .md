@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-03-08 16:58:21.248000
+tags: []
 theme: light
 title: Codeforces Round 775   E.Tyler and Strings
 ---

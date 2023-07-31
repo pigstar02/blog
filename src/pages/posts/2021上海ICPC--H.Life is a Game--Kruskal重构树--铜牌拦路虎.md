@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-11-30 09:11:13
+tags: []
 theme: light
 title: 2021上海ICPC--H.Life is a Game--Kruskal重构树--铜牌拦路虎
 ---

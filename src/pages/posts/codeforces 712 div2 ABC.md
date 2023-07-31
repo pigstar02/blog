@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-04-04 16:55:28
+tags: []
 theme: light
 title: codeforces 712 div2 ABC
 ---

@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-11-13 16:50:10.633000
+tags: []
 theme: light
 title: Codeforces Round 754 (Div. 2)
 ---

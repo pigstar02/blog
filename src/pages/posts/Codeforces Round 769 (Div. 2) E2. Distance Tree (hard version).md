@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-02-03 17:11:51.157000
+tags: []
 theme: light
 title: Codeforces Round 769 (Div. 2) E2. Distance Tree (hard version)
 ---

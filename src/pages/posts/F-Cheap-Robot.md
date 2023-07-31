@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-04-27 14:59:18
+tags: []
 theme: light
 title: F.Cheap_Robot
 ---

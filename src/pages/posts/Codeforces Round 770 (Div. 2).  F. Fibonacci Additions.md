@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-02-22 17:05:34.381000
+tags: []
 theme: light
 title: Codeforces Round 770 (Div. 2).  F. Fibonacci Additions
 ---

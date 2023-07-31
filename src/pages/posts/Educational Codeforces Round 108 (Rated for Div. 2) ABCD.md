@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2021-04-30 10:12:37
+tags: []
 theme: light
 title: Educational Codeforces Round 108 (Rated for Div. 2) ABCD
 ---

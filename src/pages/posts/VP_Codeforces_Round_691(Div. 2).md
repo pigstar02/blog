@@ -10,6 +10,7 @@ meta:
   author: pigstar
   keywords: key3, key4
 pubDate: 2022-07-17 10:52:00.680000
+tags: []
 theme: light
 title: VP CodeforcesRound 691(Div.2)
 ---
