@@ -15,10 +15,12 @@ const dateFormated = formatDate(pubDate);
   <head>
     <BaseHead frontmatter={frontmatter}/>
     <script>
-      window.MathJax = {
+      MathJax = {
         tex: {
-          inlineMath: [['$', '$']],
-          displayMath: [['$$', '$$']]
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
         }
       };
     </script>
