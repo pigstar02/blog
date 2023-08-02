@@ -15,6 +15,14 @@ const dateFormated = formatDate(pubDate);
   <head>
     <BaseHead frontmatter={frontmatter}/>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
   </head>
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
     <Header />
@@ -53,9 +61,7 @@ const dateFormated = formatDate(pubDate);
               </div>
             </div>
           </div>
-          <div class="mathjax">
-            <slot />
-          </div>
+          <slot />
           <div class="component">
             <div class="component-content">
               <div class="article-copyright">
