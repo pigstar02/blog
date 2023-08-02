@@ -1,4 +1,4 @@
-export const SITE_TITLE = `Air Blog`;
+export const SITE_TITLE = `🐷⭐️🐟 Blog`;
 export const SITE_DESCRIPTION = 'Site Description';
 export const SITE_EMAIL = '1910156852@qq.com'
 export const SITE_NAME = 'pigstar.icu';
