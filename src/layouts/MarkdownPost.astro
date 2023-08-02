@@ -13,6 +13,9 @@ const dateFormated = formatDate(pubDate);
 
 <html lang={SITE_LANG} dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
   <head>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
     <script>
       MathJax = {
         tex: {
@@ -22,11 +25,7 @@ const dateFormated = formatDate(pubDate);
           fontCache: 'global'
         }
       };
-      </script>
-      
-      <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-      </script>
+    </script>
       <BaseHead frontmatter={frontmatter}/>
   </head>
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
