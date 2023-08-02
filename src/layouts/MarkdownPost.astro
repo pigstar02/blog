@@ -12,17 +12,18 @@ const dateFormated = formatDate(pubDate);
 ---
 
 <html lang={SITE_LANG} dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
-  <script>
-    MathJax = {
-      TeX: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-  </script>
   <head>
     <BaseHead frontmatter={frontmatter}/>
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+          displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+          processEscapes: true
+        }
+      });
     </script>
   </head>
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
