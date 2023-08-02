@@ -6496,7 +6496,7 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 
 @media only screen and (max-width: 1068px) {
   .pagebody-header {
-    font-size: 21px;
+    /* font-size: 21px; */
     line-height: 1.19048;
     font-weight: 700;
     letter-spacing: .011em;
