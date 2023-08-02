@@ -17,11 +17,12 @@ const dateFormated = formatDate(pubDate);
     <script>
       window.MathJax = {
         tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          inlineMath: [['$', '$']],
+          displayMath: [['$$', '$$']]
         }
       };
     </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   </head>
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
     <Header />
@@ -75,7 +76,6 @@ const dateFormated = formatDate(pubDate);
       </section>
     </main>
     <Footer />
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script is:inline>
       var script = document.createElement("script");
       script.src = "/static/js/initPost.js";
