@@ -16,7 +16,8 @@ const hasPassword = postHasPassword || false;
   <head>
     <script>
       const code = process.env.CODE;
-			while(hasPassword) {
+      console.log(code);
+			while({hasPassword}) {
 				var password = "";
 				password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
 				if(password != code) {
