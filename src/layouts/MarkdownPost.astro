@@ -18,8 +18,8 @@ const dateFormated = formatDate(pubDate);
     <script>
       const code = document.querySelector('meta[name="code"]').getAttribute('content');
       console.log(code);
-      const hasPassword = postHasPassword || false;
-			while(hasPassword) {
+      // const hasPassword = postHasPassword || false;
+			while(1) {
 				var password = "";
 				password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
 				if(password != code) {
