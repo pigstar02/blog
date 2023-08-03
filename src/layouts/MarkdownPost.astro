@@ -9,17 +9,19 @@ const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
 const { pubDate, title, description, featured, hasPassword: postHasPassword } = frontmatter;
 const dateFormated = formatDate(pubDate);
-
+const hasPassword = postHasPassword || false;
 ---
 
 <html lang={SITE_LANG} dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
   <head>
     <meta name="code" content={process.env.CODE} />
+    <meta name="hasPassword" content={hasPassword} />
     <script>
       const code = document.querySelector('meta[name="code"]').getAttribute('content');
+      const hasPassword = document.querySelector('meta[name="hasPassword"]').getAttribute('content');
       console.log(code);
-      // const hasPassword = postHasPassword || false;
-			while(1) {
+      
+			while(hasPassword) {
 				var password = "";
 				password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
 				if(password != code) {
