@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/pages/posts/2022牛客多校第一场H.md",
+                "file": "src/pages/posts/test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2022牛客多校第一场H"
+              "title": "test"
             }
           }
         ]
@@ -178,6 +178,8 @@
   },
   "active": "02411738cafdcd8c",
   "lastOpenFiles": [
+    "src/pages/posts/2022牛客多校第一场H.md",
+    "src/pages/posts/test.md",
     "data.json"
   ]
 }
