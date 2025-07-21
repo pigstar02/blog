@@ -15,7 +15,7 @@
               "state": {
                 "file": "src/pages/posts/未命名.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "未命名"
@@ -173,13 +173,18 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "13f1d10444c5f5b9",
   "lastOpenFiles": [
-    "未命名.md",
+    "src/pages/posts/webserver常用指令.md",
+    "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
+    "src/pages/posts/template.md",
+    "src/pages/Template/test.md",
     "src/pages/posts/未命名.md",
+    "未命名.md",
     "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/Template",
     "src/pages/posts/Makefile.md",
@@ -188,11 +193,8 @@
     "src/pages/posts/卡特兰数学习笔记.md",
     "src/pages/posts/高斯消元.md",
     "src/pages/posts/狄利克雷卷积.md",
-    "src/pages/Template/test.md",
     "public/preview/preview_dark.png",
     "src/pages/posts/操作系统.md",
-    "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
-    "src/pages/posts/template.md",
     "src/pages/posts/2021上海ICPC--H.Life_is_a_Game--Kruskal重构树--铜牌拦路虎.md",
     "src/pages/posts/2022牛客多校第一场H.md",
     "data.json"
