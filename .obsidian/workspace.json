@@ -11,14 +11,14 @@
             "id": "95723132962971e3",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "namomo每日一题week1-day7_-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 467.5
   },
   "right": {
     "id": "b8286b90b5235a6e",
@@ -140,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree 的大纲"
             }
           },
           {
@@ -176,15 +178,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "95723132962971e3",
+  "active": "81a688a40d77ecc1",
   "lastOpenFiles": [
+    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
+    "src/pages/posts/webserver常用指令.md",
+    "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
     "public/preview/preview_syntaxHighlighting.png",
     "LICENSE.md",
     "README_CN.md",
-    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/template.md",
-    "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
-    "src/pages/posts/webserver常用指令.md",
     "src/pages/Template/template.md",
     "src/pages/posts/未命名.md",
     "未命名.md",
