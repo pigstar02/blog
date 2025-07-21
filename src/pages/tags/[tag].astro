@@ -10,7 +10,15 @@ export async function getStaticPaths() {
   const allPosts = await Astro.glob([
     '../posts/**/*.md',           // 包含 posts 目录下的所有 .md 文件
   ]);
-  const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+  // ⭐ 日志 2: 检查收集到的所有标签
+  // 使用 .flatMap(post => post.frontmatter.tags || []) 来安全地处理没有tags字段的文章
+  const allTags = allPosts.flatMap(post => post.frontmatter.tags || []);
+  const uniqueTags = [...new Set(allTags)].filter(tag => tag); // 过滤掉 null, undefined 等无效标签
+  // const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+  
+  console.log(`[getStaticPaths] Found ${uniqueTags.length} unique, valid tags:`);
+  console.log(uniqueTags); // 直接打印数组，便于检查
+  console.log(allTags); // 直接打印数组，便于检查
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag)).sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));;
     return {
