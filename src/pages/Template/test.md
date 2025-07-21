@@ -1,6 +1,6 @@
 ---
 # === 主要信息 ===
-author: "[请填写作者名]"
+author: "pigstar"
 title: "{{title}}"
 pubDate: "{{date:YYYY-MM-DD}} {{time:HH:mm:ss}}"
 description: "[请填写文章的简短描述]"
@@ -26,7 +26,7 @@ layout: ../../layouts/MarkdownPost.astro
 keywords: "[关键词1, 关键词2, 关键词3]"
 meta:
   - name: author
-    content: "[请填写作者名]" # 建议与上面的 author 保持一致
+    content: "pigstar" # 建议与上面的 author 保持一致
   - name: keywords
     content: "[关键词1, 关键词2, 关键词3]" # 建议与上面的 keywords 保持一致
 ---
