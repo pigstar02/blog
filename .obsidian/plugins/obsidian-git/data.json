@@ -1,5 +1,7 @@
 {
   "commitMessage": "AutoCommit: {{hostname}} {{numFiles}} {{date}}",
+  "autoCommitMessage": "AutoCommit: {{hostname}} {{numFiles}} {{date}}",
+  "commitMessageScript": "",
   "commitDateFormat": "MM-DD HH:mm",
   "autoSaveInterval": 0.1,
   "autoPushInterval": 0.1,
@@ -8,6 +10,7 @@
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": true,
+  "showErrorNotices": true,
   "disablePopupsForNoChanges": false,
   "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
@@ -15,7 +18,7 @@
   "syncMethod": "merge",
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": true,
-  "treeStructure": false,
+  "treeStructure": true,
   "refreshSourceControl": true,
   "basePath": "",
   "differentIntervalCommitAndPush": true,
@@ -29,6 +32,7 @@
   "showFileMenu": true,
   "authorInHistoryView": "hide",
   "dateInHistoryView": false,
+  "diffStyle": "split",
   "lineAuthor": {
     "show": false,
     "followMovement": "inactive",
@@ -53,6 +57,5 @@
     "gutterSpacingFallbackLength": 5,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
-  },
-  "autoCommitMessage": "AutoCommit: {{hostname}} {{numFiles}} {{date}}"
+  }
 }

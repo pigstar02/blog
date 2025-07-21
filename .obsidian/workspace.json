@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f7844131634cc090",
+        "id": "f9cda931e4ae7ed6",
         "type": "tabs",
         "children": [
           {
-            "id": "13f1d10444c5f5b9",
+            "id": "95723132962971e3",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "LICENSE.md",
-                "bFile": "LICENSE.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: LICENSE"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -163,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 465.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,7 +172,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "13f1d10444c5f5b9",
+  "active": "95723132962971e3",
   "lastOpenFiles": [
     "public/preview/preview_syntaxHighlighting.png",
     "LICENSE.md",
