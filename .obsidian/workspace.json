@@ -11,14 +11,14 @@
             "id": "13f1d10444c5f5b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
-                "mode": "source",
-                "source": false
+                "aFile": "LICENSE.md",
+                "bFile": "LICENSE.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree"
+              "icon": "diff",
+              "title": "Diff: LICENSE"
             }
           }
         ]
@@ -178,10 +178,13 @@
   },
   "active": "13f1d10444c5f5b9",
   "lastOpenFiles": [
+    "public/preview/preview_syntaxHighlighting.png",
+    "LICENSE.md",
+    "README_CN.md",
+    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/template.md",
     "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
     "src/pages/posts/webserver常用指令.md",
-    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/Template/template.md",
     "src/pages/posts/未命名.md",
     "未命名.md",
