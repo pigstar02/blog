@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d59ccc5589547740",
+        "id": "f7844131634cc090",
         "type": "tabs",
         "children": [
           {
-            "id": "02411738cafdcd8c",
+            "id": "13f1d10444c5f5b9",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/templates.json",
-                "bFile": ".obsidian/templates.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: templates.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -176,8 +172,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02411738cafdcd8c",
+  "active": "1d016d0e7f4f91d3",
   "lastOpenFiles": [
+    "未命名.md",
     "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/Template",
     "src/pages/posts/Makefile.md",
