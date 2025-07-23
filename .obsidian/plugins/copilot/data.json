@@ -31,7 +31,7 @@
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": false,
   "includeActiveNoteAsContext": true,
-  "defaultOpenArea": "editor",
+  "defaultOpenArea": "view",
   "customPromptsFolder": "copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
   "qaExclusions": "copilot-conversations,copilot-custom-prompts",

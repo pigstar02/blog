@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/pages/posts/未命名.md",
+                "file": "src/pages/posts/UE控制台指令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "UE控制台指令"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/pages/posts/未命名.md",
+                "file": "src/pages/posts/UE控制台指令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "UE控制台指令 的大纲"
             }
           },
           {
@@ -158,9 +158,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "60626783f22e19b0",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -180,7 +190,8 @@
   },
   "active": "95723132962971e3",
   "lastOpenFiles": [
-    "src/pages/posts/未命名.md",
+    "src/pages/posts/UE控制台命令.md",
+    "src/pages/posts/UE控制台指令.md",
     "copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot-custom-prompts/Rewrite as tweet.md",
     "copilot-custom-prompts/Remove URLs.md",
@@ -209,7 +220,6 @@
     "src/pages/Template",
     "src/pages/posts/Makefile.md",
     "src/pages/posts/namomo每日一题week1-day6_-_daimayuanoj464._数数.md",
-    "src/pages/posts/codeforces_div2_714_ABC.md",
     "public/preview/preview_dark.png",
     "data.json"
   ]
