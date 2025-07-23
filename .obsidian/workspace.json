@@ -11,14 +11,14 @@
             "id": "95723132962971e3",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "src/pages/posts/未命名.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
         ]
@@ -140,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/pages/posts/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -177,8 +178,9 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "1d016d0e7f4f91d3",
+  "active": "95723132962971e3",
   "lastOpenFiles": [
+    "src/pages/posts/未命名.md",
     "copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot-custom-prompts/Rewrite as tweet.md",
     "copilot-custom-prompts/Remove URLs.md",
@@ -193,7 +195,6 @@
     "copilot-custom-prompts/Translate to Chinese.md",
     "copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot-custom-prompts",
-    "src/pages/posts/未命名.md",
     "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/webserver常用指令.md",
     "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",

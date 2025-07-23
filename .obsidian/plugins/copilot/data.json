@@ -12,13 +12,13 @@
   "azureOpenAIApiDeploymentName": "",
   "azureOpenAIApiVersion": "",
   "azureOpenAIApiEmbeddingDeploymentName": "",
-  "googleApiKey": "",
+  "googleApiKey": "AIzaSyAQ2Mtbf6dzPezlT24nzSkhxOF5zcOTQBs",
   "openRouterAiApiKey": "",
   "xaiApiKey": "",
   "mistralApiKey": "",
   "deepseekApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "gpt-4.1|openai",
+  "defaultModelKey": "gemini-2.5-flash-lite-preview-06-17|google",
   "embeddingModelKey": "text-embedding-3-small|openai",
   "temperature": 0.1,
   "maxTokens": 6000,
@@ -31,7 +31,7 @@
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": false,
   "includeActiveNoteAsContext": true,
-  "defaultOpenArea": "view",
+  "defaultOpenArea": "editor",
   "customPromptsFolder": "copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
   "qaExclusions": "copilot-conversations,copilot-custom-prompts",
@@ -147,8 +147,8 @@
       "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
-        "vision",
-        "reasoning"
+        "reasoning",
+        "vision"
       ]
     },
     {
@@ -157,8 +157,8 @@
       "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
-        "vision",
-        "reasoning"
+        "reasoning",
+        "vision"
       ]
     },
     {
@@ -231,6 +231,12 @@
       "capabilities": [
         "reasoning"
       ]
+    },
+    {
+      "name": "gemini-2.5-flash-lite-preview-06-17",
+      "provider": "google",
+      "apiKey": "AIzaSyAQ2Mtbf6dzPezlT24nzSkhxOF5zcOTQBs",
+      "enabled": true
     }
   ],
   "activeEmbeddingModels": [
