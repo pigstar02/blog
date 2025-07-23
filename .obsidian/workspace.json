@@ -15,7 +15,7 @@
               "state": {
                 "file": "src/pages/posts/UE控制台指令.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "UE控制台指令"
