@@ -11,14 +11,14 @@
             "id": "95723132962971e3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "namomo每日一题week1-day7_-",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -141,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -175,34 +173,43 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0fdd06cac8365621",
+  "active": "1d016d0e7f4f91d3",
   "lastOpenFiles": [
-    "public/Template/template.md",
-    "public/Template",
+    "copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot-custom-prompts/Remove URLs.md",
+    "copilot-custom-prompts/Generate glossary.md",
+    "copilot-custom-prompts/Generate table of contents.md",
+    "copilot-custom-prompts/Make longer.md",
+    "copilot-custom-prompts/Make shorter.md",
+    "copilot-custom-prompts/Emojify.md",
+    "copilot-custom-prompts/Explain like I am 5.md",
+    "copilot-custom-prompts/Simplify.md",
+    "copilot-custom-prompts/Summarize.md",
+    "copilot-custom-prompts/Translate to Chinese.md",
+    "copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot-custom-prompts",
+    "src/pages/posts/未命名.md",
     "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/webserver常用指令.md",
     "src/pages/posts/VP_Codeforces_Round_691(Div._2).md",
+    "src/pages/posts/template.md",
+    "public/Template/template.md",
+    "public/Template",
     "public/preview/preview_syntaxHighlighting.png",
     "LICENSE.md",
     "README_CN.md",
-    "src/pages/posts/template.md",
     "src/pages/Template/template.md",
-    "src/pages/posts/未命名.md",
     "未命名.md",
     "src/pages/Template",
     "src/pages/posts/Makefile.md",
     "src/pages/posts/namomo每日一题week1-day6_-_daimayuanoj464._数数.md",
     "src/pages/posts/codeforces_div2_714_ABC.md",
-    "src/pages/posts/卡特兰数学习笔记.md",
-    "src/pages/posts/高斯消元.md",
-    "src/pages/posts/狄利克雷卷积.md",
     "public/preview/preview_dark.png",
-    "src/pages/posts/操作系统.md",
-    "src/pages/posts/2021上海ICPC--H.Life_is_a_Game--Kruskal重构树--铜牌拦路虎.md",
-    "src/pages/posts/2022牛客多校第一场H.md",
     "data.json"
   ]
 }
