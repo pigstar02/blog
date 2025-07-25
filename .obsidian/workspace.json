@@ -6,6 +6,7 @@
       {
         "id": "f9cda931e4ae7ed6",
         "type": "tabs",
+        "dimension": 62.94820717131474,
         "children": [
           {
             "id": "95723132962971e3",
@@ -13,13 +14,37 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/pages/posts/UE控制台指令.md",
+                "file": "src/pages/posts/TypeScript语法糖.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "UE控制台指令"
-            }
+              "title": "TypeScript语法糖"
+            },
+            "group": "e79d8ad99266e9c6"
+          }
+        ]
+      },
+      {
+        "id": "63249dad56df31cf",
+        "type": "tabs",
+        "dimension": 37.05179282868526,
+        "children": [
+          {
+            "id": "ade9c7a50da60cc6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/pages/posts/TypeScript语法糖.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "TypeScript语法糖 的大纲"
+            },
+            "group": "e79d8ad99266e9c6"
           }
         ]
       }
@@ -78,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 467.5,
+    "collapsed": true
   },
   "right": {
     "id": "b8286b90b5235a6e",
@@ -140,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/pages/posts/UE控制台指令.md",
+                "file": "src/pages/posts/TypeScript语法糖.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UE控制台指令 的大纲"
+              "title": "TypeScript语法糖 的大纲"
             }
           },
           {
@@ -170,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -188,10 +214,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "95723132962971e3",
+  "active": "ade9c7a50da60cc6",
   "lastOpenFiles": [
-    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/UE控制台指令.md",
+    "src/pages/posts/TypeScript语法糖.md",
+    "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/UE控制台命令.md",
     "copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot-custom-prompts/Rewrite as tweet.md",
@@ -219,7 +246,6 @@
     "未命名.md",
     "src/pages/Template",
     "src/pages/posts/Makefile.md",
-    "src/pages/posts/namomo每日一题week1-day6_-_daimayuanoj464._数数.md",
     "public/preview/preview_dark.png",
     "data.json"
   ]
