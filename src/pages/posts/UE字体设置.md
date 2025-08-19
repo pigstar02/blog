@@ -19,7 +19,7 @@ meta:
     content: "[关键词1, 关键词2, 关键词3]"
 ---
 相关参数都在**FontCache.cpp**文件里
-![](https://raw.githubusercontent.com/pigstar02/blog_img/main/20250819113341087.png)
+![FontCache.cpp](https://raw.githubusercontent.com/pigstar02/blog_img/main/20250819113341087.png)
 
 ## 1. **MaxFontAtlasPagesBeforeFlush**
 
