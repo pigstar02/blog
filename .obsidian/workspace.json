@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f9cda931e4ae7ed6",
+        "id": "e87d6af78fb0e729",
         "type": "tabs",
-        "dimension": 62.94820717131474,
         "children": [
           {
-            "id": "95723132962971e3",
+            "id": "2312533240a13c0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/pages/posts/TypeScript语法糖.md",
+                "file": "src/pages/posts/UE字体设置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TypeScript语法糖"
-            },
-            "group": "e79d8ad99266e9c6"
-          }
-        ]
-      },
-      {
-        "id": "63249dad56df31cf",
-        "type": "tabs",
-        "dimension": 37.05179282868526,
-        "children": [
-          {
-            "id": "ade9c7a50da60cc6",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "src/pages/posts/TypeScript语法糖.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "TypeScript语法糖 的大纲"
-            },
-            "group": "e79d8ad99266e9c6"
+              "title": "UE字体设置"
+            }
           }
         ]
       }
@@ -103,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 467.5,
-    "collapsed": true
+    "width": 467.5
   },
   "right": {
     "id": "b8286b90b5235a6e",
@@ -196,7 +170,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -214,10 +188,13 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "ade9c7a50da60cc6",
+  "active": "2312533240a13c0b",
   "lastOpenFiles": [
-    "src/pages/posts/UE控制台指令.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "src/pages/posts/UE字体设置.md",
     "src/pages/posts/TypeScript语法糖.md",
+    "src/pages/posts/UE控制台指令.md",
     "src/pages/posts/namomo每日一题week1-day7_-_daimayuanoj454._Minimum_Or_Spanning_Tree.md",
     "src/pages/posts/UE控制台命令.md",
     "copilot-custom-prompts/Rewrite as tweet thread.md",
@@ -243,9 +220,7 @@
     "LICENSE.md",
     "README_CN.md",
     "src/pages/Template/template.md",
-    "未命名.md",
     "src/pages/Template",
-    "src/pages/posts/Makefile.md",
     "public/preview/preview_dark.png",
     "data.json"
   ]
