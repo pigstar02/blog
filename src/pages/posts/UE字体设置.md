@@ -1,32 +1,22 @@
 ---
-# === 主要信息 ===
-author: "pigstar"
-title: "UE字体设置"
-pubDate: "2025-08-19 11:31:18"
+author: pigstar
+title: UE字体设置
+pubDate: 2025-08-19 11:31:18
 description: "[请填写文章的简短描述]"
-
-# === 封面图片 ===
 cover:
-  alt: "UE字体设置"
+  alt: UE字体设置
   square: "[请粘贴方形封面图片URL]"
   url: "[请粘贴主封面图片URL]"
-
-# === 分类与主题 ===
 tags:
+  - 虚幻引擎
 theme: light
-
-# === 博客框架配置 (重要!) ===
-# 请确保这个路径指向您项目中正确的布局文件
 layout: ../../layouts/MarkdownPost.astro
-
-# === SEO 元数据 ===
-# 这部分内容通常会自动生成网页的 <meta> 标签
 keywords: "[关键词1, 关键词2, 关键词3]"
 meta:
   - name: author
-    content: "pigstar" # 建议与上面的 author 保持一致
+    content: pigstar
   - name: keywords
-    content: "[关键词1, 关键词2, 关键词3]" # 建议与上面的 keywords 保持一致
+    content: "[关键词1, 关键词2, 关键词3]"
 ---
 
 <!-- 在这里开始撰写您的正文 -->
