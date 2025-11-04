@@ -74,12 +74,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 289.5
   },
   "right": {
     "id": "b8286b90b5235a6e",
@@ -159,16 +158,6 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "60626783f22e19b0",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
           }
         ],
         "currentTab": 4
@@ -179,18 +168,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false,
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "2312533240a13c0b",
+  "active": "1d016d0e7f4f91d3",
   "lastOpenFiles": [
     "src/pages/posts/UE字体设置.md",
     "src/pages/posts/网络编程.md",
