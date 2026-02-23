@@ -13,8 +13,8 @@ const description = frontmatter
     ? frontmatter.description
     : Astro.props.description;
 const author = frontmatter ? frontmatter.author : SITE_AUTHOR;
-const tags = frontmatter ? frontmatter.tags.join() : "";
-const cover = frontmatter ? frontmatter.cover.url : image;
+const tags = frontmatter && Array.isArray(frontmatter.tags) ? frontmatter.tags.join() : "";
+const cover = frontmatter?.cover?.url ?? frontmatter?.cover?.square ?? image;
 const date = new Date();
 const isoNow = date.toISOString();
 ---
@@ -27,6 +27,8 @@ const isoNow = date.toISOString();
 />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+<!-- KaTeX 数学公式样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
 
 
 <!-- Primary Meta Tags -->

@@ -6,7 +6,8 @@ import Footer from "../components/Footer.astro";
 import { formatDate } from "../utils";
 import { SITE_LANG } from "../consts";
 const { frontmatter } = Astro.props;
-const type = frontmatter.tags[0];
+const tagsSafe = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
+const type = tagsSafe[0] ?? "未分类";
 const { pubDate, title, description, featured } = frontmatter;
 const dateFormated = formatDate(pubDate);
 ---
@@ -61,7 +62,7 @@ const dateFormated = formatDate(pubDate);
             <div class:list={["tagssheet component"]}>
               <div class="component-content">
                 {
-                  frontmatter.tags.map((tag) => {
+                  tagsSafe.map((tag) => {
                     return (
                       <a href={`/tags/${tag}`} class="tag">
                         {tag}

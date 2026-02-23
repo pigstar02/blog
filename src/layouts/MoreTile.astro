@@ -3,7 +3,8 @@ import { formatDate } from "../utils";
 const { title, href, cover, tags, date  } = Astro.props;
 
 const dateFormated = formatDate(date);
-const type = tags[0];
+const tagsSafe = Array.isArray(tags) ? tags : [];
+const type = tagsSafe[0] ?? "未分类";
 const label = `${title} - ${type} - 发表时间 ${dateFormated}`;
 ---
 

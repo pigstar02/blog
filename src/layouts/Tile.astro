@@ -3,7 +3,9 @@ import { formatDate } from "../utils";
 const { title, href, cover, tags, date, level} = Astro.props;
 
 const dateFormated = formatDate(date);
-const type = tags[0];
+// 兼容 frontmatter 中 tags 缺失、为 null、或非数组（如 YAML 只写 tags: 未跟列表）
+const tagsSafe = Array.isArray(tags) ? tags : [];
+const type = tagsSafe[0] ?? "未分类";
 const label = `${title} - ${type} - 发表时间 ${dateFormated}`;
 // level 1: hreo
 // level 2: 2up

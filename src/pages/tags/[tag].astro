@@ -20,7 +20,7 @@ export async function getStaticPaths() {
   console.log(uniqueTags); // 直接打印数组，便于检查
   console.log(allTags); // 直接打印数组，便于检查
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag)).sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));;
+    const filteredPosts = allPosts.filter((post) => (post.frontmatter.tags ?? []).includes(tag)).sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
     return {
       params: { tag },
       props: { posts: filteredPosts },

@@ -17,13 +17,15 @@ allPosts.sort(
         {
           // tile-hero
           allPosts.slice(0, 1).map((post) => {
+            const cover = post.frontmatter.cover;
+            const coverUrl = cover?.url ?? cover?.square ?? "";
             return (
               <Tile
                 title={post.frontmatter.title}
                 href={post.url}
                 date={post.frontmatter.pubDate}
                 tags={post.frontmatter.tags}
-                cover={post.frontmatter.cover.url}
+                cover={coverUrl}
                 level="1"
               />
             );
@@ -33,13 +35,15 @@ allPosts.sort(
         {
           // tile-2up
           allPosts.slice(1, 5).map((post) => {
+            const cover = post.frontmatter.cover;
+            const coverUrl = cover?.url ?? cover?.square ?? "";
             return (
               <Tile
                 title={post.frontmatter.title}
                 href={post.url}
                 date={post.frontmatter.pubDate}
                 tags={post.frontmatter.tags}
-                cover={post.frontmatter.cover.url}
+                cover={coverUrl}
                 level="2"
               />
             );
@@ -49,13 +53,15 @@ allPosts.sort(
         {
           // tile-3up
           allPosts.slice(5, 11).map((post) => {
+            const cover = post.frontmatter.cover;
+            const coverUrl = cover?.url ?? cover?.square ?? "";
             return (
               <Tile
                 title={post.frontmatter.title}
                 href={post.url}
                 date={post.frontmatter.pubDate}
                 tags={post.frontmatter.tags}
-                cover={post.frontmatter.cover.url}
+                cover={coverUrl}
                 level="3"
               />
             );
@@ -73,17 +79,17 @@ allPosts.sort(
         {
           // tile-2up
           allPosts.slice(0, 6).map((post) => {
+            const cover = post.frontmatter.cover;
+            const coverSquare = cover?.square ?? "";
+            const coverUrl = cover?.url ?? cover?.square ?? "";
+            const coverImg = coverSquare !== "" ? coverSquare : coverUrl;
             return (
               <MoreTile
                 title={post.frontmatter.title}
                 href={post.url}
                 date={post.frontmatter.pubDate}
                 tags={post.frontmatter.tags}
-                cover={
-                  post.frontmatter.cover.square !== ""
-                    ? post.frontmatter.cover.square
-                    : post.frontmatter.cover.url
-                }
+                cover={coverImg}
               />
             );
           })

@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import { visit } from 'unist-util-visit'
 import md5 from 'md5';
 import sitemap from '@astrojs/sitemap';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 import { SITE_URL } from './src/consts';
 
@@ -170,7 +172,8 @@ function pipeline() {
 export default defineConfig({
   site: SITE_URL,
   markdown: {
-    rehypePlugins: pipeline(),
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex, ...pipeline()],
     syntaxHighlight: 'prism',
   },
   integrations: [sitemap()],
