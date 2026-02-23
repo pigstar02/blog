@@ -39,8 +39,8 @@ title: PocketWorldExample项目学习
     4. 递归收集了所有Actor 通过`SetAlphaMaskedActors` 存放在`AlphaMaskActorPtrs` 
     5. 把生成的character存放在AlphaMaskMaterialActor的数组中
     6. 把上述生成的PocketCapture和BP_MenuStage缓存到PWEUISubsystem中
-4. BP_ThirdPersonCharacter中按下E键打开UI  WBP_TsetMenu
-5. WBP_TsetMenu把WBP_MenuCharacterRender的公共变量Material设置到WidgetDropShadow上，WidgetDropShadow的color是全黑，这样可以得到一个假阴影（通过WidgetDropShadow的位置偏移得到，不受光照变化影响）
+4. BP_ThirdPersonCharacter中按下E键打开UI  WBP_TestMenu
+5. WBP_TestMenu把WBP_MenuCharacterRender的公共变量Material设置到WidgetDropShadow上，WidgetDropShadow的color是全黑，这样可以得到一个假阴影（通过WidgetDropShadow的位置偏移得到，不受光照变化影响）
 6. WBP_MenuCharacterRender在Construct时通过PWEUISubsystem拿到刚才创建的PocketCapture并创建两张RrenderTexture，分别对应颜色和透明度。通过SetTextureParameterValue设置到图片控件Character的AlphaMask和Diffuse上。
 7. 然后WBP_MenuCharacterRender每一帧Tick
     1. 叫PocketCapture执行`CaptureDiffuse` 获取BP_MenuStage子节点下的所有Actor然后通过`CaptureScene` 拍下来存到Diffuse那张RT上。

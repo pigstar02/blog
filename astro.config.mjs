@@ -100,6 +100,18 @@ function pipeline() {
       });
     },
 
+    // 为 mermaid 代码块添加 data 属性，便于前端脚本识别并渲染流程图
+    () => (tree) => {
+      visit(tree, 'element', (node) => {
+        if (node.tagName === 'code' && node.properties?.className) {
+          const classes = Array.isArray(node.properties.className) ? node.properties.className : [node.properties.className];
+          if (classes.some(c => String(c).includes('mermaid'))) {
+            node.properties['data-mermaid-block'] = 'true';
+          }
+        }
+      });
+    },
+
 
     () => (tree) => {
       for (let i = 0; i < tree.children.length; i++) {
