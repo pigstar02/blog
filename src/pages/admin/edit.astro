@@ -1,0 +1,491 @@
+---
+const now = new Date();
+const pad = (n) => String(n).padStart(2, '0');
+const defaultDate = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章编辑 - 管理后台</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor@3/dist/index.css" />
+    <style>
+      :root {
+        --admin-primary: #6366f1;
+        --admin-primary-hover: #4f46e5;
+        --admin-bg: #f1f5f9;
+        --admin-card: #ffffff;
+        --admin-text: #1e293b;
+        --admin-text-secondary: #64748b;
+        --admin-border: #e2e8f0;
+        --admin-success: #10b981;
+        --admin-danger: #ef4444;
+        --admin-radius: 10px;
+        --admin-shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+        --admin-shadow-lg: 0 4px 16px rgba(0,0,0,.1);
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: var(--admin-bg);
+        color: var(--admin-text);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      .admin-header {
+        background: var(--admin-card);
+        border-bottom: 1px solid var(--admin-border);
+        padding: 0 24px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--admin-shadow);
+      }
+      .admin-header-inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 56px;
+      }
+      .header-left { display: flex; align-items: center; gap: 16px; }
+      .back-link {
+        color: var(--admin-text-secondary);
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 6px 10px;
+        border-radius: 6px;
+        transition: all .15s;
+      }
+      .back-link:hover { background: var(--admin-bg); color: var(--admin-text); }
+      .page-title { font-size: 17px; font-weight: 700; color: var(--admin-text); }
+
+      .header-actions { display: flex; gap: 8px; align-items: center; }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 18px;
+        border: none;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .15s;
+      }
+      .btn-primary { background: var(--admin-primary); color: white; }
+      .btn-primary:hover { background: var(--admin-primary-hover); }
+      .btn-primary:disabled { opacity: .6; cursor: not-allowed; }
+      .btn-secondary {
+        background: var(--admin-card);
+        color: var(--admin-text-secondary);
+        border: 1px solid var(--admin-border);
+      }
+      .btn-secondary:hover { background: var(--admin-bg); }
+      .save-hint {
+        font-size: 12px;
+        color: var(--admin-text-secondary);
+        margin-right: 4px;
+      }
+
+      .admin-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 16px 24px 24px;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 16px;
+        min-height: calc(100vh - 56px);
+      }
+
+      .sidebar { display: flex; flex-direction: column; gap: 12px; }
+      .card {
+        background: var(--admin-card);
+        border-radius: var(--admin-radius);
+        padding: 16px;
+        box-shadow: var(--admin-shadow);
+        border: 1px solid var(--admin-border);
+      }
+      .card-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--admin-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        margin-bottom: 12px;
+      }
+      .form-group { margin-bottom: 10px; }
+      .form-group:last-child { margin-bottom: 0; }
+      .form-label {
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--admin-text);
+        margin-bottom: 3px;
+      }
+      .form-input, .form-textarea {
+        width: 100%;
+        padding: 6px 10px;
+        border: 1px solid var(--admin-border);
+        border-radius: 6px;
+        font-size: 13px;
+        font-family: inherit;
+        outline: none;
+        transition: border-color .15s;
+        background: var(--admin-bg);
+      }
+      .form-input:focus, .form-textarea:focus { border-color: var(--admin-primary); }
+      .form-textarea { resize: vertical; min-height: 48px; }
+      .form-hint {
+        font-size: 11px;
+        color: var(--admin-text-secondary);
+        margin-top: 2px;
+      }
+
+      .editor-panel {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+      }
+      .editor-card {
+        background: var(--admin-card);
+        border-radius: var(--admin-radius);
+        box-shadow: var(--admin-shadow);
+        border: 1px solid var(--admin-border);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      #vditor {
+        flex: 1;
+        border: none !important;
+      }
+      .vditor { border: none !important; }
+      .vditor-toolbar { border-bottom: 1px solid var(--admin-border) !important; }
+
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: white;
+        z-index: 1000;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all .3s;
+        box-shadow: var(--admin-shadow-lg);
+      }
+      .toast.show { transform: translateY(0); opacity: 1; }
+      .toast.success { background: var(--admin-success); }
+      .toast.error { background: var(--admin-danger); }
+
+      .loading-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(255,255,255,.85);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        font-size: 15px;
+        color: var(--admin-text-secondary);
+      }
+      .loading-overlay.active { display: flex; }
+      .hidden { display: none !important; }
+
+      @media (max-width: 960px) {
+        .admin-main { grid-template-columns: 1fr; padding: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <div class="header-left">
+          <a href="/admin" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            返回
+          </a>
+          <span class="page-title" id="pageTitle">新建文章</span>
+        </div>
+        <div class="header-actions">
+          <span class="save-hint">Ctrl+S 保存</span>
+          <a class="btn btn-secondary hidden" id="previewLink" href="#" target="_blank">预览</a>
+          <button class="btn btn-primary" id="saveBtn">保存</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="loading-overlay" id="loadingOverlay">加载中...</div>
+
+    <main class="admin-main">
+      <div class="sidebar">
+        <div class="card">
+          <div class="card-title">文章属性</div>
+          <div class="form-group">
+            <label class="form-label" for="fieldTitle">标题</label>
+            <input class="form-input" id="fieldTitle" type="text" placeholder="文章标题" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fieldDate">发布日期</label>
+            <input class="form-input" id="fieldDate" type="text" placeholder="YYYY-MM-DD HH:mm:ss" value={defaultDate} />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fieldDesc">描述</label>
+            <textarea class="form-textarea" id="fieldDesc" rows="2" placeholder="文章描述（可选）"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fieldTags">标签</label>
+            <input class="form-input" id="fieldTags" type="text" placeholder="标签1, 标签2" />
+            <div class="form-hint">多个标签用逗号分隔</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fieldCover">封面图片</label>
+            <input class="form-input" id="fieldCover" type="text" placeholder="https://..." />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">文件信息</div>
+          <div class="form-group">
+            <label class="form-label" for="fieldFilename">文件名</label>
+            <input class="form-input" id="fieldFilename" type="text" placeholder="my-post.md" />
+            <div class="form-hint" id="filenameHint">留空则根据标题自动生成</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor-panel">
+        <div class="editor-card">
+          <div id="vditor"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script is:inline src="https://cdn.jsdelivr.net/npm/vditor@3/dist/index.min.js"></script>
+    <script is:inline>
+      (function () {
+        var hash = window.location.hash.replace(/^#/, '');
+        var params = new URLSearchParams(hash);
+        var fileParam = params.get('file') || '';
+        var isEdit = !!fileParam;
+
+        var fieldTitle = document.getElementById('fieldTitle');
+        var fieldDate = document.getElementById('fieldDate');
+        var fieldDesc = document.getElementById('fieldDesc');
+        var fieldTags = document.getElementById('fieldTags');
+        var fieldCover = document.getElementById('fieldCover');
+        var fieldFilename = document.getElementById('fieldFilename');
+        var saveBtn = document.getElementById('saveBtn');
+        var toast = document.getElementById('toast');
+        var loadingOverlay = document.getElementById('loadingOverlay');
+        var previewLink = document.getElementById('previewLink');
+        var pageTitle = document.getElementById('pageTitle');
+        var filenameHint = document.getElementById('filenameHint');
+
+        var vditor = null;
+        var editorReady = false;
+        var pendingContent = null;
+
+        if (isEdit) {
+          pageTitle.textContent = '编辑文章';
+          document.title = '编辑文章 - 管理后台';
+          previewLink.classList.remove('hidden');
+          fieldFilename.value = fileParam;
+          fieldFilename.readOnly = true;
+          fieldFilename.style.opacity = '0.7';
+          fieldFilename.style.cursor = 'not-allowed';
+          filenameHint.textContent = '编辑模式下不可修改文件名';
+        }
+
+        function showToast(message, type) {
+          toast.textContent = message;
+          toast.className = 'toast ' + type;
+          requestAnimationFrame(function () { toast.classList.add('show'); });
+          setTimeout(function () { toast.classList.remove('show'); }, 3000);
+        }
+
+        function parseFrontmatter(raw) {
+          var match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+          if (!match) return { meta: {}, body: raw };
+          var yamlStr = match[1];
+          var body = match[2];
+          var meta = {};
+          yamlStr.split('\n').forEach(function (line) {
+            var idx = line.indexOf(':');
+            if (idx === -1) return;
+            var key = line.slice(0, idx).trim();
+            var val = line.slice(idx + 1).trim();
+            if (key === 'tags') {
+              var m = val.match(/\[([^\]]*)\]/);
+              meta.tags = m ? m[1].split(',').map(function (t) { return t.trim(); }).filter(Boolean) : [];
+            } else {
+              if ((val.startsWith("'") && val.endsWith("'")) || (val.startsWith('"') && val.endsWith('"')))
+                val = val.slice(1, -1);
+              meta[key] = val;
+            }
+          });
+          return { meta: meta, body: body };
+        }
+
+        function buildFileContent() {
+          var title = fieldTitle.value.trim();
+          var date = fieldDate.value.trim();
+          var desc = fieldDesc.value.trim();
+          var tags = fieldTags.value.split(',').map(function (t) { return t.trim(); }).filter(Boolean);
+          var cover = fieldCover.value.trim();
+          var body = vditor ? vditor.getValue() : '';
+
+          var fm = '---\n';
+          fm += 'layout: ../../layouts/MarkdownPost.astro\n';
+          fm += "title: '" + title.replace(/'/g, "''") + "'\n";
+          fm += 'pubDate: ' + date + '\n';
+          fm += "description: '" + desc.replace(/'/g, "''") + "'\n";
+          fm += 'tags: [' + tags.join(', ') + ']\n';
+          if (cover) fm += 'cover: ' + cover + '\n';
+          fm += '---\n';
+          return fm + '\n' + body;
+        }
+
+        function getFilename() {
+          if (isEdit) return fileParam;
+          var custom = fieldFilename.value.trim();
+          if (custom) return custom.endsWith('.md') ? custom : custom + '.md';
+          var title = fieldTitle.value.trim();
+          if (!title) return '';
+          return title.replace(/[<>:"/\\|?*]/g, '_') + '.md';
+        }
+
+        // ── Init Vditor ──
+        vditor = new Vditor('vditor', {
+          height: '100%',
+          mode: 'ir',
+          lang: 'zh_CN',
+          placeholder: '开始写作...',
+          icon: 'material',
+          toolbar: [
+            'headings', 'bold', 'italic', 'strike', '|',
+            'list', 'ordered-list', 'check', '|',
+            'code', 'inline-code', 'link', 'upload', 'table', '|',
+            'quote', 'line', '|',
+            'undo', 'redo', '|',
+            'edit-mode', 'outline', 'fullscreen',
+          ],
+          toolbarConfig: { pin: true },
+          counter: { enable: true, type: 'text' },
+          cache: { enable: false },
+          preview: {
+            math: { engine: 'KaTeX' },
+            hljs: { lineNumber: true },
+          },
+          upload: {
+            url: '/__admin_api/upload-image',
+            accept: 'image/*',
+            multiple: true,
+            fieldName: 'file',
+            filename: function (name) { return name; },
+            format: function (files, responseText) {
+              return responseText;
+            },
+          },
+          after: function () {
+            editorReady = true;
+            if (pendingContent !== null) {
+              vditor.setValue(pendingContent);
+              pendingContent = null;
+            }
+          },
+        });
+
+        // ── Keyboard shortcut ──
+        document.addEventListener('keydown', function (e) {
+          if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+            e.preventDefault();
+            saveBtn.click();
+          }
+        });
+
+        // ── Save ──
+        saveBtn.addEventListener('click', async function () {
+          var title = fieldTitle.value.trim();
+          if (!title) { showToast('请输入文章标题', 'error'); fieldTitle.focus(); return; }
+          if (!fieldDate.value.trim()) { showToast('请输入发布日期', 'error'); fieldDate.focus(); return; }
+          var filename = getFilename();
+          if (!filename) { showToast('请输入文件名', 'error'); fieldFilename.focus(); return; }
+
+          saveBtn.disabled = true;
+          saveBtn.textContent = '保存中...';
+          try {
+            var content = buildFileContent();
+            var res = await fetch('/__admin_api/save-post', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ file: filename, content: content }),
+            });
+            var data = await res.json();
+            if (data.success) {
+              showToast('保存成功', 'success');
+              if (!isEdit) window.location.href = '/admin/edit#file=' + encodeURIComponent(filename);
+            } else {
+              throw new Error(data.error || '保存失败');
+            }
+          } catch (e) {
+            showToast('保存失败: ' + e.message, 'error');
+          } finally {
+            saveBtn.disabled = false;
+            saveBtn.textContent = '保存';
+          }
+        });
+
+        // ── Load existing post ──
+        if (isEdit && fileParam) {
+          loadingOverlay.classList.add('active');
+          fetch('/__admin_api/get-post?file=' + encodeURIComponent(fileParam))
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+              if (data.error) { showToast('加载失败: ' + data.error, 'error'); return; }
+              var parsed = parseFrontmatter(data.content);
+              fieldTitle.value = parsed.meta.title || '';
+              fieldDate.value = parsed.meta.pubDate || '';
+              fieldDesc.value = parsed.meta.description || '';
+              fieldTags.value = (parsed.meta.tags || []).join(', ');
+              fieldCover.value = parsed.meta.cover || '';
+              if (editorReady) vditor.setValue(parsed.body);
+              else pendingContent = parsed.body;
+              if (previewLink) {
+                var slug = fileParam.replace(/\.md$/, '');
+                previewLink.href = '/posts/' + slug;
+              }
+            })
+            .catch(function (e) { showToast('加载失败: ' + e.message, 'error'); })
+            .finally(function () { loadingOverlay.classList.remove('active'); });
+        }
+
+        // ── Auto filename ──
+        if (!isEdit) {
+          fieldTitle.addEventListener('input', function () {
+            if (!fieldFilename.dataset.manual) {
+              var title = fieldTitle.value.trim();
+              fieldFilename.value = title ? title.replace(/[<>:"/\\|?*]/g, '_') + '.md' : '';
+            }
+          });
+          fieldFilename.addEventListener('input', function () { fieldFilename.dataset.manual = 'true'; });
+        }
+      })();
+    </script>
+  </body>
+</html>

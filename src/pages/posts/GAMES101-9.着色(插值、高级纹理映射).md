@@ -1,22 +1,11 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
-  url: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
-description: ''
-keywords: 计算机图形学, GAMES101
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: 计算机图形学, GAMES101
-  name: keywords
+cover: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
+description: ''
 pubDate: 2023-04-23 13:20:57
 tags:
 - GAMES101
 - 计算机图形学
-theme: light
 title: GAMES101-9.着色（插值、高级纹理映射）
 ---
 

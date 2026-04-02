@@ -1,22 +1,11 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
-  url: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
-description: ''
-keywords: 计算机图形学, GAMES101
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: 计算机图形学, GAMES101
-  name: keywords
+cover: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304141736721.png
+description: ''
 pubDate: 2023-04-20 20:23:57
 tags:
 - GAMES101
 - 计算机图形学
-theme: light
 title: GAMES101-7.着色（光照与基本着色模型）
 ---
 # 可见性

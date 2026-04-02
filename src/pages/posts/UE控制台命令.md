@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: UE 控制台命令速查：调试、性能、渲染等常用指令，便于运行时调试与自动化测试。
-keywords: Unreal Engine, 控制台命令, 调试, 性能, Obj List, Stat FPS
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: UE, 控制台命令, 调试
-  name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: UE 控制台命令速查：调试、性能、渲染等常用指令，便于运行时调试与自动化测试。
 pubDate: 2025-12-07 13:10:00
 tags:
 - UE5
 - 调试
 - 游戏开发
-theme: light
 title: UE控制台命令
 ---
 

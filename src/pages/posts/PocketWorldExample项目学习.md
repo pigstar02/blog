@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: PocketWorldExample 是学习 Lyra 中 PocketWorld 插件的最小集示例，介绍如何使用该插件实现角色选单渲染。
-keywords: UE5, Lyra, PocketWorld, 插件, 角色选单
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: UE5, Lyra, PocketWorld
-  name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: PocketWorldExample 是学习 Lyra 中 PocketWorld 插件的最小集示例，介绍如何使用该插件实现角色选单渲染。
 pubDate: 2025-12-14 10:43:00
 tags:
 - UE5
 - Lyra
 - 游戏开发
-theme: light
 title: PocketWorldExample项目学习
 ---
 

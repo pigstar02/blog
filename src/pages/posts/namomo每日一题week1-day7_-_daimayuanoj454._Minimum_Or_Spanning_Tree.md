@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: "123"
-keywords: key1, key2, key3
 layout: ../../layouts/MarkdownPost.astro
-meta:
-  - content: pigstar
-    name: author
-  - content: key3, key4
-    name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: "123"
 pubDate: 2022-03-04 13:01:59.970000
 tags:
   - ACM
   - ICPC
   - 题解
-theme: light
 title: namomo每日一题week1-day7 - daimayuanoj454. Minimum Or Spanning Tree
 ---
 

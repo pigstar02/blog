@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: UMG 离屏渲染并异步保存为 PNG，解决分享图、隐藏 UI 截图等问题。
-keywords: UE5, UMG, 离屏渲染, RenderTarget, FWidgetRenderer
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: UE5, UMG, 离屏渲染
-  name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: UMG 离屏渲染并异步保存为 PNG，解决分享图、隐藏 UI 截图等问题。
 pubDate: 2025-12-10 22:11:00
 tags:
 - UE5
 - UMG
 - 游戏开发
-theme: light
 title: UE5离屏渲染
 ---
 

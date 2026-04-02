@@ -1,24 +1,13 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://cdn.jsdelivr.net/gh/pigstar02/blog_img@main/2023 10 21 12 08 38.jpg
-  url: https://cdn.jsdelivr.net/gh/pigstar02/blog_img@main/2023 10 21 12 08 38.jpg
-description: ''
-keywords: cpp，虚函数，多态
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: cpp，虚函数，多态
-  name: keywords
+cover: https://cdn.jsdelivr.net/gh/pigstar02/blog_img@main/2023 10 21 12 08 38.jpg
+description: ''
 pubDate: 2023-10-21 09:48:09
 tags: 
 - cpp
 - 虚函数
 - 多态
 
-theme: light
 title: cpp杂记
 ---
 

@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://raw.githubusercontent.com/pigstar02/blog_img/main/202307312301344.jpeg
-  url: https://raw.githubusercontent.com/pigstar02/blog_img/main/202307312301344.jpeg
-description: ''
-keywords: cpp语法，cast
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: cpp语法，cast
-  name: keywords
+cover: https://raw.githubusercontent.com/pigstar02/blog_img/main/202307312301344.jpeg
+description: ''
 pubDate: 2023-10-21 11:32:07
 tags: 
 - cpp语法
 - cast
 
-theme: light
 title: c++的四种cast
 ---
 

@@ -1,0 +1,503 @@
+---
+const allPosts = await Astro.glob('../posts/**/*.md');
+allPosts.sort(
+  (a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
+
+const totalPosts = allPosts.length;
+const allTags = [...new Set(allPosts.flatMap((p) => p.frontmatter.tags || []))].sort();
+const latestDate = allPosts[0]?.frontmatter.pubDate || '暂无';
+
+const posts = allPosts.map((p) => {
+  const match = p.file.replace(/\\/g, '/').match(/src\/pages\/posts\/(.+)$/);
+  return {
+    title: p.frontmatter.title || '无标题',
+    pubDate: p.frontmatter.pubDate || '',
+    tags: p.frontmatter.tags || [],
+    description: p.frontmatter.description || '',
+    url: p.url,
+    file: match ? match[1] : p.file.split(/[/\\]/).pop(),
+  };
+});
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理后台 - Pigstar Blog</title>
+    <style>
+      :root {
+        --admin-primary: #6366f1;
+        --admin-primary-hover: #4f46e5;
+        --admin-bg: #f1f5f9;
+        --admin-card: #ffffff;
+        --admin-text: #1e293b;
+        --admin-text-secondary: #64748b;
+        --admin-border: #e2e8f0;
+        --admin-success: #10b981;
+        --admin-danger: #ef4444;
+        --admin-danger-hover: #dc2626;
+        --admin-warning: #f59e0b;
+        --admin-radius: 10px;
+        --admin-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+        --admin-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: var(--admin-bg);
+        color: var(--admin-text);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      .admin-header {
+        background: var(--admin-card);
+        border-bottom: 1px solid var(--admin-border);
+        padding: 0 24px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: var(--admin-shadow);
+      }
+      .admin-header-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+      }
+      .admin-logo {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--admin-primary);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .admin-logo svg { width: 24px; height: 24px; }
+      .admin-nav { display: flex; gap: 16px; align-items: center; }
+      .admin-nav a {
+        color: var(--admin-text-secondary);
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.15s;
+      }
+      .admin-nav a:hover { color: var(--admin-primary); background: #f0f0ff; }
+
+      .admin-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .stat-card {
+        background: var(--admin-card);
+        border-radius: var(--admin-radius);
+        padding: 20px;
+        box-shadow: var(--admin-shadow);
+        border: 1px solid var(--admin-border);
+      }
+      .stat-label {
+        font-size: 13px;
+        color: var(--admin-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+      }
+      .stat-value {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--admin-text);
+      }
+      .stat-value.primary { color: var(--admin-primary); }
+      .stat-value.small { font-size: 16px; }
+
+      .toolbar {
+        background: var(--admin-card);
+        border-radius: var(--admin-radius);
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        box-shadow: var(--admin-shadow);
+        border: 1px solid var(--admin-border);
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .search-input {
+        flex: 1;
+        min-width: 200px;
+        padding: 8px 14px;
+        border: 1px solid var(--admin-border);
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.15s;
+        background: var(--admin-bg);
+      }
+      .search-input:focus { border-color: var(--admin-primary); }
+      .tag-select {
+        padding: 8px 14px;
+        border: 1px solid var(--admin-border);
+        border-radius: 8px;
+        font-size: 14px;
+        background: var(--admin-bg);
+        outline: none;
+        cursor: pointer;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.15s;
+        white-space: nowrap;
+      }
+      .btn-primary {
+        background: var(--admin-primary);
+        color: white;
+      }
+      .btn-primary:hover { background: var(--admin-primary-hover); }
+      .btn-danger {
+        background: transparent;
+        color: var(--admin-danger);
+        padding: 6px 10px;
+      }
+      .btn-danger:hover { background: #fef2f2; }
+      .btn-ghost {
+        background: transparent;
+        color: var(--admin-text-secondary);
+        padding: 6px 10px;
+      }
+      .btn-ghost:hover { background: var(--admin-bg); color: var(--admin-text); }
+
+      .posts-card {
+        background: var(--admin-card);
+        border-radius: var(--admin-radius);
+        box-shadow: var(--admin-shadow);
+        border: 1px solid var(--admin-border);
+        overflow: hidden;
+      }
+      .posts-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .posts-table th {
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--admin-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid var(--admin-border);
+        background: #fafbfc;
+      }
+      .posts-table td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 14px;
+        vertical-align: middle;
+      }
+      .posts-table tr:last-child td { border-bottom: none; }
+      .posts-table tbody tr {
+        transition: background 0.1s;
+      }
+      .posts-table tbody tr:hover { background: #f8fafc; }
+      .post-title-cell {
+        max-width: 400px;
+      }
+      .post-title-link {
+        color: var(--admin-text);
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .post-title-link:hover { color: var(--admin-primary); }
+      .post-desc {
+        font-size: 12px;
+        color: var(--admin-text-secondary);
+        margin-top: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .post-date {
+        color: var(--admin-text-secondary);
+        white-space: nowrap;
+        font-size: 13px;
+      }
+      .tag-badge {
+        display: inline-block;
+        padding: 2px 8px;
+        background: #eef2ff;
+        color: var(--admin-primary);
+        border-radius: 4px;
+        font-size: 12px;
+        margin: 1px 2px;
+        white-space: nowrap;
+      }
+      .actions-cell {
+        white-space: nowrap;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: var(--admin-text-secondary);
+      }
+      .empty-state p { margin-top: 8px; font-size: 14px; }
+
+      .post-count {
+        font-size: 13px;
+        color: var(--admin-text-secondary);
+        padding: 12px 16px;
+        border-top: 1px solid var(--admin-border);
+        background: #fafbfc;
+      }
+
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: white;
+        z-index: 1000;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.3s;
+        box-shadow: var(--admin-shadow-lg);
+      }
+      .toast.show { transform: translateY(0); opacity: 1; }
+      .toast.success { background: var(--admin-success); }
+      .toast.error { background: var(--admin-danger); }
+
+      @media (max-width: 768px) {
+        .admin-main { padding: 16px; }
+        .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        .posts-table th:nth-child(3),
+        .posts-table td:nth-child(3) { display: none; }
+        .posts-table th:nth-child(4),
+        .posts-table td:nth-child(4) { display: none; }
+        .post-title-cell { max-width: 200px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <a href="/admin" class="admin-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="9" /><rect x="14" y="3" width="7" height="5" /><rect x="14" y="12" width="7" height="9" /><rect x="3" y="16" width="7" height="5" />
+          </svg>
+          管理后台
+        </a>
+        <nav class="admin-nav">
+          <a href="/admin/edit">新建文章</a>
+          <a href="/" target="_blank">查看博客</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">文章总数</div>
+          <div class="stat-value primary">{totalPosts}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">标签总数</div>
+          <div class="stat-value">{allTags.length}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">最近发布</div>
+          <div class="stat-value small">{latestDate}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">快捷操作</div>
+          <div style="margin-top: 4px;">
+            <a href="/admin/edit" class="btn btn-primary">+ 新建文章</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input
+          type="text"
+          class="search-input"
+          id="searchInput"
+          placeholder="搜索文章标题或描述..."
+        />
+        <select class="tag-select" id="tagFilter">
+          <option value="">全部标签</option>
+          {allTags.map((tag) => <option value={tag}>{tag}</option>)}
+        </select>
+      </div>
+
+      <div class="posts-card">
+        <table class="posts-table">
+          <thead>
+            <tr>
+              <th>标题</th>
+              <th>日期</th>
+              <th>标签</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="postsBody">
+            {posts.map((post) => (
+              <tr
+                data-title={post.title.toLowerCase()}
+                data-desc={(post.description || '').toLowerCase()}
+                data-tags={post.tags.join(',').toLowerCase()}
+                data-file={post.file}
+              >
+                <td class="post-title-cell">
+                  <a class="post-title-link" href={post.url} target="_blank" title={post.title}>
+                    {post.title}
+                  </a>
+                  {post.description && <div class="post-desc">{post.description}</div>}
+                </td>
+                <td class="post-date">{post.pubDate}</td>
+                <td>
+                  {post.tags.map((tag) => (
+                    <span class="tag-badge">{tag}</span>
+                  ))}
+                </td>
+                <td class="actions-cell">
+                  <a
+                    class="btn btn-ghost"
+                    href={`/admin/edit#file=${encodeURIComponent(post.file)}`}
+                    title="编辑"
+                  >
+                    编辑
+                  </a>
+                  <button
+                    class="btn btn-danger delete-btn"
+                    data-file={post.file}
+                    data-title={post.title}
+                    title="删除"
+                  >
+                    删除
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {posts.length === 0 && (
+          <div class="empty-state">
+            <p>还没有文章，点击「新建文章」开始写作吧</p>
+          </div>
+        )}
+        <div class="post-count" id="postCount">
+          共 {totalPosts} 篇文章
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script is:inline>
+      const searchInput = document.getElementById('searchInput');
+      const tagFilter = document.getElementById('tagFilter');
+      const postsBody = document.getElementById('postsBody');
+      const postCount = document.getElementById('postCount');
+      const toast = document.getElementById('toast');
+
+      function filterPosts() {
+        const query = searchInput.value.toLowerCase().trim();
+        const tag = tagFilter.value.toLowerCase();
+        const rows = postsBody.querySelectorAll('tr');
+        let visible = 0;
+
+        rows.forEach((row) => {
+          const title = row.dataset.title || '';
+          const desc = row.dataset.desc || '';
+          const tags = row.dataset.tags || '';
+
+          const matchSearch = !query || title.includes(query) || desc.includes(query);
+          const matchTag = !tag || tags.split(',').some((t) => t.trim() === tag);
+
+          if (matchSearch && matchTag) {
+            row.style.display = '';
+            visible++;
+          } else {
+            row.style.display = 'none';
+          }
+        });
+
+        postCount.textContent = query || tag
+          ? `显示 ${visible} / ${rows.length} 篇文章`
+          : `共 ${rows.length} 篇文章`;
+      }
+
+      searchInput.addEventListener('input', filterPosts);
+      tagFilter.addEventListener('change', filterPosts);
+
+      function showToast(message, type) {
+        toast.textContent = message;
+        toast.className = 'toast ' + type;
+        requestAnimationFrame(() => toast.classList.add('show'));
+        setTimeout(() => toast.classList.remove('show'), 3000);
+      }
+
+      document.querySelectorAll('.delete-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const file = btn.dataset.file;
+          const title = btn.dataset.title;
+          if (!confirm(`确定要删除「${title}」吗？此操作不可恢复。`)) return;
+
+          btn.disabled = true;
+          btn.textContent = '删除中...';
+
+          try {
+            const res = await fetch('/__admin_api/delete-post', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ file }),
+            });
+            const data = await res.json();
+            if (data.success) {
+              showToast('文章已删除', 'success');
+              btn.closest('tr').remove();
+              const remaining = postsBody.querySelectorAll('tr').length;
+              postCount.textContent = `共 ${remaining} 篇文章`;
+            } else {
+              throw new Error(data.error || '删除失败');
+            }
+          } catch (e) {
+            showToast('删除失败: ' + e.message, 'error');
+            btn.disabled = false;
+            btn.textContent = '删除';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

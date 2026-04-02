@@ -1,22 +1,11 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304090934026.png
-  url: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304090934026.png
-description: ''
-keywords: 计算机图形学, GAMES101
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: makefile 
-  name: keywords
+cover: https://raw.githubusercontent.com/pigstar02/blog_img/main/202304090934026.png
+description: ''
 pubDate: 2023-04-16 10:40:00
 tags:
 - cpp
 - Makefile
-theme: light
 title: Makefile入门
 ---
 

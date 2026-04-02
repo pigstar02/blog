@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: 基于控制反转与异步并行的全局中断系统设计，解决传送/邀请时的逻辑残留与数据丢失。
-keywords: TypeScript, 游戏开发, 架构设计, Puerts, 中断系统
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: TypeScript, 游戏开发, 架构
-  name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: 基于控制反转与异步并行的全局中断系统设计，解决传送/邀请时的逻辑残留与数据丢失。
 pubDate: 2025-12-02 17:27:00
 tags:
 - TypeScript
 - 游戏开发
 - 架构设计
-theme: light
 title: '[架构设计] TypeScript 游戏开发：如何设计优雅的全局中断 (Interruption) 系统'
 ---
 

@@ -12,9 +12,12 @@ const title = frontmatter
 const description = frontmatter
     ? frontmatter.description
     : Astro.props.description;
-const author = frontmatter ? frontmatter.author : SITE_AUTHOR;
+const author = frontmatter?.author || SITE_AUTHOR;
 const tags = frontmatter && Array.isArray(frontmatter.tags) ? frontmatter.tags.join() : "";
-const cover = frontmatter?.cover?.url ?? frontmatter?.cover?.square ?? image;
+const keywords = frontmatter?.keywords || tags || SITE_TITLE;
+const cover = typeof frontmatter?.cover === 'string'
+    ? frontmatter.cover
+    : frontmatter?.cover?.url ?? frontmatter?.cover?.square ?? image;
 const date = new Date();
 const isoNow = date.toISOString();
 ---
@@ -35,18 +38,17 @@ const isoNow = date.toISOString();
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-<meta name="keywords" content={frontmatter ? frontmatter.keywords ? frontmatter.keywords : SITE_TITLE : SITE_TITLE} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content={author} />
 
 <!-- DIY Meta Tags -->
 {
-    frontmatter
-        ? frontmatter.meta
-            ? frontmatter.meta.map((elem) => {
-                  return (
-                  <meta name={elem.name} content={elem.content} />
-                  );
-              })
-            : ""
+    frontmatter?.meta
+        ? frontmatter.meta.map((elem) => {
+              return (
+              <meta name={elem.name} content={elem.content} />
+              );
+          })
         : ""
 }
 

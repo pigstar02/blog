@@ -1,22 +1,10 @@
 ---
-author: pigstar
+layout: ../../layouts/MarkdownPost.astro
 title: TypeScript语法糖
 pubDate: 2025-07-25 10:09:19
 description: "[请填写文章的简短描述]"
-cover:
-  alt: TypeScript语法糖
-  square: "[请粘贴方形封面图片URL]"
-  url: "[请粘贴主封面图片URL]"
 tags:
   - TypeScript
-theme: light
-layout: ../../layouts/MarkdownPost.astro
-keywords: "[关键词1, 关键词2, 关键词3]"
-meta:
-  - name: author
-    content: pigstar
-  - name: keywords
-    content: "[关键词1, 关键词2, 关键词3]"
 ---
 TypeScript 提供了许多语法糖，旨在简化代码编写、提高可读性并减少样板代码。以下是一些常见的 TypeScript 语法糖，按类别划分并附带代码示例：
 

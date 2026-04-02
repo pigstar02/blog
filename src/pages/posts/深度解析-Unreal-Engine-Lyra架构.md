@@ -1,23 +1,12 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
-description: 深度拆解 Lyra 的配置解耦、初始化时序、UI 扩展与跨地图数据持久化，理解模块化游戏框架。
-keywords: Unreal Engine, Lyra, Gameplay, 架构, GAS, GameFeature
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: UE5, Lyra, 架构
-  name: keywords
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLBRw4ETs0pE0bP6OXse4jfMOotclHykLZEw-qP6LVonmdkTU5bu_ZuJyJqPB0tGWNHw&usqp=CAU
+description: 深度拆解 Lyra 的配置解耦、初始化时序、UI 扩展与跨地图数据持久化，理解模块化游戏框架。
 pubDate: 2025-12-07 13:09:00
 tags:
 - UE5
 - Lyra
 - 游戏架构
-theme: light
 title: '[深度解析] Unreal Engine Lyra 架构：模块化 Gameplay 与数据流全景图'
 ---
 

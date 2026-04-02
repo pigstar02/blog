@@ -1,3 +1,15 @@
+export function resolveCover(cover, fallback = "") {
+  if (!cover) return fallback;
+  if (typeof cover === "string") return cover;
+  return cover.url ?? cover.square ?? fallback;
+}
+
+export function resolveCoverSquare(cover, fallback = "") {
+  if (!cover) return fallback;
+  if (typeof cover === "string") return cover;
+  return cover.square ?? cover.url ?? fallback;
+}
+
 export function formatDate(dateString) {
   const date = new Date(dateString);
   const year = date.getFullYear();

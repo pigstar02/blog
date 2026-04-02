@@ -1,20 +1,8 @@
 ---
-author: pigstar
-cover:
-  alt: cover
-  square: null
-  url: null
-description: ''
-keywords: 计算机图形学, GAMES101
 layout: ../../layouts/MarkdownPost.astro
-meta:
-- content: pigstar
-  name: author
-- content: linux网络编程, webserver
-  name: keywords
+description: ''
 pubDate: 2023-02-27 16:32:17
 tags: [linux网络编程, webserver]
-theme: light
 title: webserver常用指令
 ---
 

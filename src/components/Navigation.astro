@@ -21,6 +21,11 @@ import { SITE_TITLE } from "../consts";
           <div class="nav-item-wrapper">
             <button id="themeButton" class="nav-item-content">主题</button>
           </div>
+          {import.meta.env.DEV && (
+            <div class="nav-item-wrapper">
+              <a href="/admin" class="nav-item-content">管理</a>
+            </div>
+          )}
         </div>
       </div>
     </div>

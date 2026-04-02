@@ -1,22 +1,10 @@
 ---
-author: pigstar
+layout: ../../layouts/MarkdownPost.astro
 title: UE字体设置
 pubDate: 2025-08-19 11:31:18
 description: "[请填写文章的简短描述]"
-cover:
-  alt: UE字体设置
-  square: "[请粘贴方形封面图片URL]"
-  url: "[请粘贴主封面图片URL]"
 tags:
   - 虚幻引擎
-theme: light
-layout: ../../layouts/MarkdownPost.astro
-keywords: "[关键词1, 关键词2, 关键词3]"
-meta:
-  - name: author
-    content: pigstar
-  - name: keywords
-    content: "[关键词1, 关键词2, 关键词3]"
 ---
 相关参数都在**FontCache.cpp**文件里
 

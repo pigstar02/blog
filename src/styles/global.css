@@ -5669,12 +5669,12 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 .component-content {
   margin-left: auto;
   margin-right: auto;
-  width: 653px
+  width: min(880px, 75%)
 }
 
 @media only screen and (max-width: 1068px) {
   .component-content {
-    width: 576px
+    width: min(720px, 85%)
   }
 }
 
@@ -7079,6 +7079,96 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 .article-header,
 .featured-header {
   padding: 16px 0px 0px 0px;
+}
+
+
+/* ── Article Cover Image ── */
+
+.article-cover {
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.article-cover .component-content {
+  width: 980px;
+}
+
+.article-cover__frame {
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--gray-primary, #f2f2f2);
+  line-height: 0;
+}
+
+.article-cover__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 520px;
+  opacity: 0;
+  transform: scale(1.01);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.article-cover__image.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.article-cover--featured .component-content {
+  width: min(1120px, 90%);
+}
+
+.article-cover--featured .article-cover__frame {
+  border-radius: 20px;
+}
+
+.article-cover--featured .article-cover__image {
+  max-height: 600px;
+}
+
+.theme-dark .article-cover__frame {
+  background: #2a2a2c;
+}
+
+@media only screen and (max-width: 1068px) {
+  .article-cover .component-content {
+    width: 692px;
+  }
+  .article-cover--featured .component-content {
+    width: min(900px, 90%);
+  }
+  .article-cover__image {
+    max-height: 440px;
+  }
+  .article-cover--featured .article-cover__image {
+    max-height: 500px;
+  }
+  .article-cover__frame {
+    border-radius: 14px;
+  }
+  .article-cover--featured .article-cover__frame {
+    border-radius: 16px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .article-cover {
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .article-cover .component-content,
+  .article-cover--featured .component-content {
+    width: 100%;
+  }
+  .article-cover__frame,
+  .article-cover--featured .article-cover__frame {
+    border-radius: 0;
+  }
+  .article-cover__image,
+  .article-cover--featured .article-cover__image {
+    max-height: 320px;
+  }
 }
 
 
